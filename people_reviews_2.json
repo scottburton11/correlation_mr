@@ -1,0 +1,42 @@
+[
+	{ "name": "Alice",
+		"reviews": [
+			{"name": "French Restaurant", "score": 4},
+			{"name": "Fast Food", "score": 1},
+			{"name": "Department Store", "score": 5},
+			{"name": "Pet Store", "score": 1},
+			{"name": "Chinese Food Restaurant", "score": 3},
+			{"name": "Book Store", "score": 4},
+			{"name": "Theme Park", "score": 2}
+		]
+	},
+	{ "name": "Bob",
+		"reviews": [
+			{"name": "French Restaurant", "score": 2},
+			{"name": "Fast Food", "score": 5},
+			{"name": "Department Store", "score": 1},
+			{"name": "Pet Store", "score": 5},
+			{"name": "Chinese Food Restaurant", "score": 3},
+			{"name": "Book Store", "score": 2},
+			{"name": "Theme Park", "score": 4}
+		]
+	},
+	{ "name": "Charlie",
+		"reviews": [
+			{"name": "French Restaurant", "score": 4},
+			{"name": "Fast Food", "score": 4},
+			{"name": "Department Store", "score": 2},
+			{"name": "Pet Store", "score": 3},
+			{"name": "Chinese Food Restaurant", "score": 4},
+			{"name": "Book Store", "score": 3},
+			{"name": "Theme Park", "score": 3}
+		]
+	},
+	{
+		"name": "David",
+		"reviews": [
+			{"name": "Hardware Store", "score": 5},
+			{"name": "Pet Store", "score": 1}
+		]
+	}
+]

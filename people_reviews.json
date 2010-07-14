@@ -1,0 +1,132 @@
+[
+	{ "name": "Alice",
+		"reviews": [
+			{"name": "French Restaurant", "score": 4},
+			{"name": "Fast Food", "score": 1},
+			{"name": "Department Store", "score": 5},
+			{"name": "Pet Store", "score": 1},
+			{"name": "Chinese Food Restaurant", "score": 3},
+			{"name": "Book Store", "score": 4},
+			{"name": "Theme Park", "score": 2}
+		]
+	},
+	{ "name": "Bob",
+		"reviews": [
+			{"name": "French Restaurant", "score": 2},
+			{"name": "Fast Food", "score": 4},
+			{"name": "Pet Store", "score": 3},
+			{"name": "Chinese Food Restaurant", "score": 5},
+			{"name": "Theme Park", "score": 5}
+		]
+	},
+	{ "name": "Charlie",
+		"reviews": [
+			{"name": "Fast Food", "score": 5},
+			{"name": "Chinese Food Restaurant", "score": 5},
+			{"name": "Theme Park", "score": 5}
+		]
+	},
+	{ "name": "David",
+		"reviews": [
+			{"name": "French Restaurant", "score": 5},
+			{"name": "Fast Food", "score": 2},
+			{"name": "Department Store", "score": 3},
+			{"name": "Pet Store", "score": 4},
+			{"name": "Chinese Food Restaurant", "score": 2},
+			{"name": "Theme Park", "score": 5}
+		]
+	},
+	{ "name": "Eames",
+		"reviews": [
+			{"name": "French Restaurant", "score": 5},
+			{"name": "Department Store", "score": 5},
+			{"name": "Chinese Food Restaurant", "score": 4},
+			{"name": "Book Store", "score": 4}
+		]
+	},
+	{ "name": "Francois",
+		"reviews": [
+			{"name": "French Restaurant", "score": 5},
+			{"name": "Fast Food", "score": 1},
+			{"name": "Chinese Food Restaurant", "score": 2},
+			{"name": "Book Store", "score": 4}
+		]
+	},
+	{ "name": "George",
+		"reviews": [
+			{"name": "Fast Food", "score": 4},
+			{"name": "Department Store", "score": 1},
+			{"name": "Pet Store", "score": 4},
+			{"name": "Chinese Food Restaurant", "score": 5},
+			{"name": "Theme Park", "score": 4}
+		]
+	},
+	{ "name": "Harold",
+		"reviews": [
+			{"name": "French Restaurant", "score": 3},
+			{"name": "Fast Food", "score": 4},
+			{"name": "Department Store", "score": 3},
+			{"name": "Pet Store", "score": 3},
+			{"name": "Chinese Food Restaurant", "score": 3},
+			{"name": "Book Store", "score": 4},
+			{"name": "Theme Park", "score": 4}
+		]
+	},
+	{ "name": "Iago",
+		"reviews": [
+			{"name": "French Restaurant", "score": 4},
+			{"name": "Department Store", "score": 3},
+			{"name": "Pet Store", "score": 3},
+			{"name": "Book Store", "score": 4}
+		]
+	},
+	{ "name": "James",
+		"reviews": [
+			{"name": "French Restaurant", "score": 5},
+			{"name": "Fast Food", "score": 4},
+			{"name": "Department Store", "score": 3},
+			{"name": "Pet Store", "score": 5},
+			{"name": "Chinese Food Restaurant", "score": 3},
+			{"name": "Book Store", "score": 4},
+			{"name": "Theme Park", "score": 4}
+		]
+	},
+	{ "name": "Karen",
+		"reviews": [
+			{"name": "French Restaurant", "score": 3},
+			{"name": "Fast Food", "score": 3},
+			{"name": "Department Store", "score": 4},
+			{"name": "Chinese Food Restaurant", "score": 4},
+			{"name": "Book Store", "score": 3},
+			{"name": "Theme Park", "score": 5}
+		]
+	},
+	{ "name": "Lucy",
+		"reviews": [
+			{"name": "French Restaurant", "score": 3},
+			{"name": "Fast Food", "score": 3},
+			{"name": "Department Store", "score": 4},
+			{"name": "pet Store", "score": 2},
+			{"name": "Chinese Food Restaurant", "score": 4},
+			{"name": "Book Store", "score": 3},
+			{"name": "Theme Park", "score": 5}
+		]
+	},
+	{ "name": "Maude",
+		"reviews": [
+			{"name": "French Restaurant", "score": 5},
+			{"name": "Fast Food", "score": 1},
+			{"name": "Pet Store", "score": 5},
+			{"name": "Chinese Food Restaurant", "score": 1},
+			{"name": "Theme Park", "score": 1}
+		]
+	},
+	{ "name": "Norman",
+		"reviews": [
+			{"name": "Fast Food", "score": 2},
+			{"name": "Department Store", "score": 3},
+			{"name": "Chinese Food Restaurant", "score": 2},
+			{"name": "Theme Park", "score": 2}
+		]
+	}
+]
