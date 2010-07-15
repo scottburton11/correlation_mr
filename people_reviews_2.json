@@ -1,42 +1,44 @@
 [
 	{ "name": "Alice",
 		"reviews": [
-			{"name": "French Restaurant", "score": 4},
-			{"name": "Fast Food", "score": 1},
-			{"name": "Department Store", "score": 5},
-			{"name": "Pet Store", "score": 1},
-			{"name": "Chinese Food Restaurant", "score": 3},
-			{"name": "Book Store", "score": 4},
-			{"name": "Theme Park", "score": 2}
+			{"name": "The French Laundry", "score": 5},
+			{"name": "McDonald's", "score": 1},
+			{"name": "Macy's", "score": 5},
+			{"name": "PetSmart", "score": 3},
+			{"name": "Bouchon", "score": 4},
+			{"name": "Barnes & Noble", "score": 4},
+			{"name": "Magic Mountain", "score": 1}
 		]
 	},
 	{ "name": "Bob",
 		"reviews": [
-			{"name": "French Restaurant", "score": 2},
-			{"name": "Fast Food", "score": 5},
-			{"name": "Department Store", "score": 1},
-			{"name": "Pet Store", "score": 5},
-			{"name": "Chinese Food Restaurant", "score": 3},
-			{"name": "Book Store", "score": 2},
-			{"name": "Theme Park", "score": 4}
+			{"name": "The French Laundry", "score": 2},
+			{"name": "McDonald's", "score": 5},
+			{"name": "Macy's", "score": 2},
+			{"name": "PetSmart", "score": 3},
+			{"name": "Bouchon", "score": 3},
+			{"name": "Barnes & Noble", "score": 2},
+			{"name": "Magic Mountain", "score": 4}
 		]
 	},
 	{ "name": "Charlie",
 		"reviews": [
-			{"name": "French Restaurant", "score": 4},
-			{"name": "Fast Food", "score": 4},
-			{"name": "Department Store", "score": 2},
-			{"name": "Pet Store", "score": 3},
-			{"name": "Chinese Food Restaurant", "score": 4},
-			{"name": "Book Store", "score": 3},
-			{"name": "Theme Park", "score": 3}
+			{"name": "The French Laundry", "score": 4},
+			{"name": "McDonald's", "score": 2},
+			{"name": "Macy's", "score": 4},
+			{"name": "Bouchon", "score": 5},
+			{"name": "Barnes & Noble", "score": 3},
+			{"name": "Magic Mountain", "score": 1},
+			{"name": "Hardware Store", "score": 4}
 		]
 	},
 	{
 		"name": "David",
 		"reviews": [
 			{"name": "Hardware Store", "score": 5},
-			{"name": "Pet Store", "score": 1}
+			{"name": "PetSmart", "score": 2},
+			{"name": "Magic Mountain", "score": 4},
+			{"name": "McDonald's", "score": 5}
 		]
 	}
 ]
