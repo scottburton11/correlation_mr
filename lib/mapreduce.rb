@@ -20,7 +20,7 @@ module MapReduce
 
   def run
     load
-    results = people.map_reduce(map, reduce, {:scope => {"people" => people_json}})
+    results = people.map_reduce(map, reduce)
     db.collection(results.name).find.each do |person|
       pp person
     end

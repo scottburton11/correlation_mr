@@ -7,7 +7,9 @@ module Algorithm
         %Q$
         function() {
           var matches = [];
-          for (var pi = 0; pi < people.length; pi++) {        
+          var people = db.people.find();
+          var length = db.people.count();
+          for (var pi = 0; pi < length; pi++) {        
             var person = people[pi];
             for (var ri = 0; ri < this.reviews.length; ri++) {
               var review = this.reviews[ri];

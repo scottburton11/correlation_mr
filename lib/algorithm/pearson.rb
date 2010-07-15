@@ -9,7 +9,9 @@ module Algorithm
           var squared_scores = [];
           var score_products = [];
           var total_matches = {};
-          for (var pi = 0; pi < people.length; pi++) {        
+          var length = db.people.count();
+          var people = db.people.find();
+          for (var pi = 0; pi < length; pi++) {        
             var person = people[pi];
             for (var ri = 0; ri < this.reviews.length; ri++) {
               var review = this.reviews[ri];
