@@ -4,7 +4,7 @@ module Algorithm
     class << self
 
       def map
-        %Q#
+        %Q@
         function() {
           var matches = [];
           var me = this;
@@ -19,11 +19,11 @@ module Algorithm
 
           emit(this.name, matches);      
         };
-        #
+        @
       end
 
       def reduce
-        %Q#
+        %Q@
           function(person, influencer_scores) {
            var list = {};
            var sums = {};
@@ -40,7 +40,7 @@ module Algorithm
            }
            return list;
           };
-        #
+        @
       end
     end
   end

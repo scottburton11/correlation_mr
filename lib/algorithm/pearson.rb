@@ -3,7 +3,7 @@ module Algorithm
     extend MapReduce
     class << self
       def map
-        %Q#
+        %Q@
         function(){
           var raw_scores = [];
           var squared_scores = [];
@@ -30,11 +30,11 @@ module Algorithm
 
           emit(this.name, {scores: raw_scores, squares: squared_scores, products: score_products, total_matches: total_matches});
         };
-        #
+        @
       end
       
       def reduce
-        %Q#
+        %Q@
         function(key, values) {
            var list = {};
            var score_sums = {};
@@ -86,7 +86,7 @@ module Algorithm
            return list;
 
         };
-        #
+        @
       end
     end
   end
