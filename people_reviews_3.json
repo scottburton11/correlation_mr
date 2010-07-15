@@ -5,7 +5,6 @@
 		  "The French Laundry": 100,
 			"Bouchon": 80,
 			"PetSmart": 50,
-			"Macy's": 50,
 			"Ad Hoc": 56
 		}
 	},
@@ -13,7 +12,6 @@
   	"follows": ["Kalioupe", "Francois", "Eames", "Devondre"],
 		"reviews": {
 		"The French Laundry": 94,
-		"Bouchon": 77,
 		"PetSmart": 33,
 		"Macy's": 62,
 		"Ad Hoc": 87
@@ -35,7 +33,6 @@
 		"The French Laundry": 100,
 		"Bouchon": 67,
 		"PetSmart": 90,
-		"Macy's": 22,
 		"Ad Hoc": 56
 		}
 	},
@@ -62,11 +59,8 @@
 	{ "name": "Gardin",
 	  "follows": ["Bjorn", "Devondre", "Henri", "Iago"],
 		"reviews": {
-		  "The French Laundry": 99,
-			"Bouchon": 72,
-			"PetSmart": 60,
-			"Macy's": 40,
-			"Ad Hoc": 90
+		  "The French Laundry": 96,
+			"Bouchon": 62
 		}
 	},
 	{ "name": "Henri",
@@ -105,8 +99,7 @@
 		"The French Laundry": 85,
 		"Bouchon": 92,
 		"PetSmart": 80,
-		"Macy's": 90,
-		"Ad Hoc": 100
+		"Macy's": 90
 		}
 	},
 	{ "name": "Louis",
@@ -115,7 +108,6 @@
 		"The French Laundry": 81,
 		"Bouchon": 80,
 		"PetSmart": 36,
-		"Macy's": 74,
 		"Ad Hoc": 78
 		}
 	}
