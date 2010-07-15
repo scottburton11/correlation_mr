@@ -1,45 +1,63 @@
 [
 	{ "name": "Alphonse",
-		"reviews": [
-			{"name": "The French Laundry", "score": 100},
-			{"name": "Bouchon", "score": 50},
-			{"name": "Ad Hoc", "score": 10}
-		]
+	  "follows": ["Bjorn", "Devondre"],
+		"reviews": {
+		  "The French Laundry": 100,
+			"Bouchon": 50,
+			"PetSmart": 50,
+			"Macy's": 50,
+			"Ad Hoc": 10
+		}
 	},
 	{ "name": "Bjorn",
-		"reviews": [
-		{"name": "The French Laundry", "score": 75},
-		{"name": "Bouchon", "score": 50},
-		{"name": "Ad Hoc", "score": 40}
-		]
+  	"follows": ["Francois", "Eames", "Devondre"],
+		"reviews": {
+		"The French Laundry": 94,
+		"Bouchon": 77,
+		"PetSmart": 33,
+		"Macy's": 62,
+		"Ad Hoc": 87
+		}
 	},
 	{ "name": "Carlotta",
-		"reviews": [
-		{"name": "The French Laundry", "score": 99},
-		{"name": "Bouchon", "score": 65},
-		{"name": "Ad Hoc", "score": 44}
-		]
+	  "follows": ["Eames", "Alphonse", "Francois"],
+		"reviews": {
+		"The French Laundry": 76,
+		"Bouchon": 99,
+		"PetSmart": 78,
+		"Macy's": 80,
+		"Ad Hoc": 99
+		}
 	},
 	{ "name": "Devondre",
-		"reviews": [
-		{"name": "The French Laundry", "score": 75},
-		{"name": "Bouchon", "score": 80},
-		{"name": "Ad Hoc", "score": 100}
-		]
+	  "follows": ["Eames", "Francois", "Bjorn", "Alphonse"],
+		"reviews": {
+		"The French Laundry": 100,
+		"Bouchon": 67,
+		"PetSmart": 90,
+		"Macy's": 22,
+		"Ad Hoc": 56
+		}
 	},
 	{ "name": "Eames",
-		"reviews": [
-		{"name": "The French Laundry", "score": 99},
-		{"name": "Bouchon", "score": 30},
-		{"name": "Ad Hoc", "score": 50}
-		]
+	  "follows": ["Alphonse", "Carlotta", "Devondre"],
+		"reviews": {
+		"The French Laundry": 85,
+		"Bouchon": 92,
+		"PetSmart": 80,
+		"Macy's": 90,
+		"Ad Hoc": 100
+		}
 	},
 	{ "name": "Francois",
-		"reviews": [
-		{"name": "The French Laundry", "score": 62},
-		{"name": "Bouchon", "score": 22},
-		{"name": "Ad Hoc", "score": 11}
-		]
+	  "follows": ["Carlotta", "Bjorn", "Eames"],
+		"reviews": {
+		"The French Laundry": 67,
+		"Bouchon": 89,
+		"PetSmart": 56,
+		"Macy's": 97,
+		"Ad Hoc": 92
+		}
 	}
 
 ]

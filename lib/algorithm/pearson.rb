@@ -3,49 +3,38 @@ module Algorithm
     extend MapReduce
     class << self
       def map
-        %Q$
+        %Q#
         function(){
           var raw_scores = [];
           var squared_scores = [];
           var score_products = [];
-          var total_matches = {};
-          var length = db.people.count();
-          var people = db.people.find();
-          for (var pi = 0; pi < length; pi++) {        
-            var person = people[pi];
-            for (var ri = 0; ri < this.reviews.length; ri++) {
-              var review = this.reviews[ri];
-              for (var pri = 0; pri < person.reviews.length; pri++) {
-                var person_review = person.reviews[pri];
-                if(review.name == person_review.name) {
-                  raw_scores.push({name: person.name, person_score: person_review.score, my_score: review.score});
-                  squared_scores.push({name: person.name, person_score: Math.pow(person_review.score, 2), my_score: Math.pow(review.score, 2)});
-                  score_products.push({name: person.name, score: (person_review.score * review.score)});
+          var total_matches = {}; 
+          var me = this;
+    
+          db.people.find({name: {$in: this.follows}}).forEach(function(person){
+            for (this_review in me.reviews){
+              if (this_review in person.reviews) {
+                var person_review_score = person.reviews[this_review];
+                var my_review_score = me.reviews[this_review];
+                raw_scores.push({name: person.name, person_score: person_review_score, my_score: my_review_score});
+                squared_scores.push({name: person.name, person_score: Math.pow(person_review_score, 2), my_score: Math.pow(my_review_score, 2)});
+                score_products.push({name: person.name, score: (person_review_score * my_review_score)});
 
-                  if (total_matches[person.name] == undefined) {
-                    total_matches[person.name] = 0;
-                  };
-                  total_matches[person.name] += 1;
+                if (total_matches[person.name] == undefined) {
+                  total_matches[person.name] = 0;
                 };
+                total_matches[person.name] += 1;
               }
             }
-          }
+          })
 
           emit(this.name, {scores: raw_scores, squares: squared_scores, products: score_products, total_matches: total_matches});
         };
-        $
+        #
       end
-
-      def reduce_
-        %Q$
-        function(key, values) {
-          return values[0];
-        }
-        $
-      end
-
+      
       def reduce
-        %Q$
+        %Q#
         function(key, values) {
            var list = {};
            var score_sums = {};
@@ -95,9 +84,9 @@ module Algorithm
           } 
 
            return list;
-          // return {scores: score_sums, my_scores: my_score_sums, squares: square_sums, my_squares: my_square_sums, products: product_sums, matches: total_matches}
+
         };
-        $
+        #
       end
     end
   end

@@ -4,31 +4,26 @@ module Algorithm
     class << self
 
       def map
-        %Q$
+        %Q#
         function() {
           var matches = [];
-          var people = db.people.find();
-          var length = db.people.count();
-          for (var pi = 0; pi < length; pi++) {        
-            var person = people[pi];
-            for (var ri = 0; ri < this.reviews.length; ri++) {
-              var review = this.reviews[ri];
-              //if (this.name == person.name) return;
-              for (var pri = 0; pri < person.reviews.length; pri++) {
-                var person_review = person.reviews[pri];
-                if(review.name == person_review.name) {
-                  matches.push({name: person.name, distance: Math.pow((review.score - person_review.score), 2)});
-                };
+          var me = this;
+    
+          db.people.find({name: {$in: this.follows}}).forEach(function(person){
+            for (this_review in me.reviews){
+              if (this_review in person.reviews) {
+                matches.push({name: person.name, distance: Math.pow((me.reviews[this_review] - person.reviews[this_review]), 2)});
               }
-            }
-          }
+            };
+          })
+
           emit(this.name, matches);      
         };
-        $
+        #
       end
 
       def reduce
-        %Q$
+        %Q#
           function(person, influencer_scores) {
            var list = {};
            var sums = {};
@@ -41,11 +36,11 @@ module Algorithm
             sums[scores[i].name] += scores[i].distance 
           }
            for (influencer in sums) {
-             list[influencer] = 1/(1+sums[influencer]);
+             list[influencer] = 1/(1+(Math.sqrt(sums[influencer])));
            }
            return list;
           };
-        $
+        #
       end
     end
   end
