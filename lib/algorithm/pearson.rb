@@ -28,7 +28,7 @@ module Algorithm
             }
           })
 
-          emit(this.name, {scores: raw_scores, squares: squared_scores, products: score_products, total_matches: total_matches});
+          emit(this._id, {scores: raw_scores, squares: squared_scores, products: score_products, total_matches: total_matches});
         };
         @
       end
