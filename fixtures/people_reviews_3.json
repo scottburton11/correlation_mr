@@ -5,31 +5,46 @@
 		  "The French Laundry": 100,
 			"Bouchon": 80,
 			"PetSmart": 50,
-			"Ad Hoc": 56
+			"WalMart": 20,
+			"Leo's Taco Truck": 87,
+			"Ad Hoc": 56,
+			"Animal": 94,
+			"Chego": 51,
+			"Street": 33
 		}
 	},
 	{ "name": "Bjorn",
   	"follows": ["Kalioupe", "Francois", "Eames", "Devondre"],
 		"reviews": {
 		"The French Laundry": 94,
-		"PetSmart": 33,
-		"Macy's": 62,
-		"Ad Hoc": 87
+		"PetSmart": 67,
+		"Macy's": 80,
+		"Ad Hoc": 81,
+		"Chego": 89,
+		"Bazaar": 72,
+		"Street": 88
 		}
 	},
 	{ "name": "Carlotta",
 	  "follows": ["Eames", "Iago", "Francois"],
 		"reviews": {
-		"The French Laundry": 76,
-		"Bouchon": 99,
-		"Macy's": 80
+		"The French Laundry": 79,
+		"Bouchon": 67,
+		"Macy's": 55,
+		"Houstons": 86,
+		"Bazaar": 88,
+		"Osteria Mozza": 92,
+		"Chego": 56
 		}
 	},
 	{ "name": "Devondre",
 	  "follows": ["Eames", "Francois", "Gardin", "Kalioupe"],
 		"reviews": {
 		"PetSmart": 90,
-		"Ad Hoc": 56
+		"Macy's": 80,
+		"Ad Hoc": 56,
+		"WalMart": 92,
+		"Street": 81
 		}
 	},
 	{ "name": "Eames",
@@ -37,49 +52,68 @@
 		"reviews": {
 		"The French Laundry": 91,
 		"Bouchon": 92,
-		"PetSmart": 80
+		"PetSmart": 68,
+		"Pizzaria Mozza": 72,
+		"Animal": 91,
+		"Bazaar": 98
 		}
 	},
 	{ "name": "Francois",
 	  "follows": ["Henri", "Bjorn", "Eames"],
 		"reviews": {
-		"The French Laundry": 78,
+		"The French Laundry": 88,
 		"PetSmart": 76,
-		"Macy's": 97
+		"Ad Hoc": 78,
+		"Leo's Taco Truck": 91,
+		"Macy's": 91,
+		"Animal": 51,
+		"Street": 67
 		}
 	},
 	{ "name": "Gardin",
 	  "follows": ["Bjorn", "Devondre", "Henri", "Iago"],
 		"reviews": {
 		  "The French Laundry": 96,
-			"Bouchon": 62
+			"Bouchon": 82,
+			"Leo's Taco Truck": 81,
+			"Pizzaria Mozza": 92,
+			"Chego": 95,
+			"Bazaar": 81
 		}
 	},
 	{ "name": "Henri",
   	"follows": ["Francois", "Iago", "Louis"],
 		"reviews": {
 		"The French Laundry": 94,
-		"Bouchon": 77,
-		"PetSmart": 33,
-		"Ad Hoc": 87
+		"Bouchon": 87,
+		"PetSmart": 63,
+		"Ad Hoc": 87,
+		"Houstons": 72,
+		"Animal": 87
 		}
 	},
 	{ "name": "Iago",
 	  "follows": ["Eames", "Alphonse", "Bjorn", "Jacques"],
 		"reviews": {
-		"The French Laundry": 78,
+		"The French Laundry": 100,
 		"Bouchon": 92,
 		"Macy's": 88,
-		"Ad Hoc": 100
+		"Ad Hoc": 78,
+		"Bazaar": 89,
+		"Pizzaria Mozza": 89
 		}
 	},
 	{ "name": "Jacques",
 	  "follows": ["Eames", "Francois", "Bjorn", "Iago"],
 		"reviews": {
-		"The French Laundry": 88,
+		"The French Laundry": 68,
 		"PetSmart": 96,
+		"WalMart": 90,
 		"Macy's": 22,
-		"Ad Hoc": 91
+		"Ad Hoc": 91,
+		"Osteria Mozza": 82,
+		"Pizzaria Mozza": 91,
+		"Bazaar": 94
 		}
 	},
 	{ "name": "Kalioupe",
@@ -87,15 +121,20 @@
 		"reviews": {
 		"The French Laundry": 85,
 		"PetSmart": 80,
-		"Macy's": 90
+		"Macy's": 90,
+		"Pizzaria Mozza": 67,
+		"Animal": 78
 		}
 	},
 	{ "name": "Louis",
 	  "follows": ["Carlotta", "Bjorn", "Eames"],
 		"reviews": {
-		"The French Laundry": 81,
+		"The French Laundry": 91,
 		"Bouchon": 80,
-		"PetSmart": 36
+		"PetSmart": 36,
+		"Houstons": 88,
+		"Osteria Mozza": 99,
+		"Street": 92
 		}
 	}
 
