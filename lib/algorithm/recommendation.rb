@@ -31,6 +31,11 @@ class Recommendation
     
     def reduce
       File.read(File.expand_path(File.dirname(__FILE__) + "/js/#{self.name.downcase}_reduce.js")).gsub(/[\n\t]/, "")
+      # %Q#
+      #   function(key, values) {
+      #     return {values: values};
+      #   }
+      # #
     end
   end
 end

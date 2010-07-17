@@ -29,5 +29,5 @@ Person.update_recommendations
 title 'Here is what we got:'
 
 Person.all.each do |person|
-  puts "#{person.name}: #{person.recommendations.inspect}"
+  puts "#{person.name}: #{person.recommendations}"
 end
